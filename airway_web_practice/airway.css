@@ -1,0 +1,329 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: #cee8ff;
+}
+
+.wrapper{
+    width: 100%;
+    max-width: 1024px;
+    margin:0 auto;
+}
+.grid{
+    display: grid;
+    grid-column: repeat(8, 1fr);
+    padding: 10px;
+}
+
+.navbar{
+   width: 100%;
+}
+
+.logo-div {
+    grid-column: 1/4;
+   display: flex;
+   cursor: pointer;
+}
+
+.logo-div img{
+    width: 50px;
+    transition: all 0.3s;
+}
+
+.logo-div:hover img{
+    padding-left: 2px;
+    padding-bottom: 2px;
+}
+
+.logo-div h1{
+    margin-left: 15px;
+   align-self: center;
+   color: #cee8ff;
+   text-shadow: 0 0 2px #111;
+}
+
+ .btn{
+   grid-column: 7/8;
+   align-self: center;
+   color: darkcyan;
+   font-weight: 500;
+   border: 2px solid #aad4fe;
+   background: none;
+   text-align: center;
+   padding: 3px;
+   border-radius: 25px;
+   transition: all 0.5s;
+   -webkit-transition: all 0.5s;
+   -o-transition: all 0.5s;
+   -moz-transition: all 0.5s;
+   cursor: pointer;
+}
+
+.btn:hover{
+    background-color: #7cbbfa;
+    color: #fff;
+    border: 2px solid #7cbbfa;
+ }
+
+#intro{
+    background-image: url(img/airway.gif);
+    background-size: cover;
+    background-position: center ;
+    background-repeat: no-repeat;
+    margin: 20px 0;
+    padding: 100px;
+    color: #fff;
+}
+
+#intro h2{
+    align-items: center;
+    font-size: 3em;
+    text-shadow: 0px 2px 1px #111;
+    margin-bottom: 10px;
+}
+
+#intro h6{
+    align-items: center;
+    font-size: 1.5em;
+    font-weight: 500;
+    text-shadow: 0px 2px 1px #111;
+}
+
+.interest{
+  padding: 20px;
+}
+
+.interest p{
+    text-shadow: 0 0 2px #3a5066;
+    font-size: 1.5em;
+    text-align: center;
+  }
+
+  .interest a{
+      grid-column: 1/9;
+      margin: auto;
+  }
+
+  .interest a img{
+   width: 50%;
+   display: block;
+   margin: 20px auto;   
+}
+
+.interest a h4{
+    text-align: center; 
+    color: #13617d;
+    transition: all 0.2s;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+ }
+
+ 
+.interest a h4:hover{
+    text-shadow: 0 0 5px #fff;
+  }
+  
+
+ .help-message {
+    background-image: url(img/paper_plane.png);
+    background-size: 70%;
+    background-position: center;
+    padding: 150px 20px;
+    background-repeat: no-repeat;
+}
+
+.help-message h4{
+    color: antiquewhite;
+    font-size: 1.8em;
+   text-align: center;
+   text-shadow: 0 0 5px #111;
+}
+
+.quick-signup{
+    padding: 20px;
+}
+
+.quick-signup p{
+    font-weight: 600;
+    font-size: 0.8em;
+   text-align: center;
+}
+
+.quick-signup p span{
+    font-weight: 800;
+    font-size: 1.2em;
+    text-decoration: underline;
+}
+
+.quick-signup form{
+   width: 50%;
+   margin: 20px auto;
+}
+
+.quick-signup input{
+    width: 100%;
+    outline: none;
+    border: none;
+    margin-bottom: 10px;
+    padding: 8px;
+    border-radius: 20px;
+    color: darkcyan;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+ }
+
+ .quick-signup input:focus{
+    border: 2px solid #7cbbfa;
+ }
+
+ footer{
+     box-shadow: 1px 0 2px #3a5066;
+     padding: 20px;
+ }
+
+ footer h5{
+    text-align: center;
+    font-weight: 600;
+    font-size: 1em;
+    margin-bottom: 20px;
+} 
+
+footer ul{
+    grid-column: 1/3;
+}
+
+footer ul li{
+    margin: 0 0 10px;
+}
+
+footer ul li a{
+   color:#13617d;
+   font-size: 0.8em;
+   font-weight: 600;
+   transition: all 0.5s;
+   -webkit-transition: all 0.5s;
+   -o-transition: all 0.5s;
+   -moz-transition: all 0.5s;
+}
+
+footer ul li a:hover{
+    color:#47ceff;
+ }
+
+.sm {
+   grid-column: 7/9;
+   display: flex;
+	justify-content: flex-end;
+   align-self: center;
+ }
+ 
+.sm img{
+   width: 30px;
+   margin-left: 10px;
+   cursor: pointer;
+}
+
+@media screen and (min-width: 640px){
+     body{
+         font-size: 18px;
+     }
+
+     .interest a {
+        display: flex;
+     }
+     
+     .interest a h4{
+         align-self: center;
+      }
+     
+      .interest a img{
+        width: 30%;   
+     }
+        
+ .help-message {
+    background-size: 45%;
+    background-position:top left;
+    padding: 150px 40px;
+}
+
+.help-message h4{
+    align-self: center;
+    padding:0 100px;
+   text-align: right;
+}
+
+.quick-signup{
+    padding: 30px;
+}
+
+
+}
+
+@media screen and (min-width: 740px){
+
+  body{
+    font-size: 20px;
+  }
+
+    .grid{
+        padding: 20px;
+    }
+
+    #intro{
+        padding: 100px 20px;
+    }
+    
+    #intro h2{
+        font-size: 4em;
+      
+    }
+    
+    .interest a {
+        display: block;
+    	margin: 10px 10%;
+    }
+
+    .interest a img{
+        width: 80%;
+     }
+  
+    .interest  a:nth-child(1){
+        grid-column: 1/3;
+    }
+    
+    .interest  a:nth-child(2){
+        margin: 0 auto;
+        padding-top: 140px;
+        grid-column: 4/6;
+    }
+    
+    .interest a:nth-child(3){
+        grid-column: 6/8;
+    }
+    
+    .help-message {
+        background-size: 45%;
+    }
+    
+    .quick-signup{
+        padding: 40px;
+    }
+
+    .quick-signup form{
+        width: 30%;
+     }
+
+    footer{
+        padding: 30px;
+    }
+}
